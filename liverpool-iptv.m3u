@@ -1,7 +1,8 @@
 #EXTM3U
-# 利物浦·英超直播源 — 每周五更新（2026-11-07 首版）
+# 利物浦·英超直播源 — 每周五更新（2026-11-07 更新）
 # 播放器里填这个文件的远程地址，每周五更新后点一下刷新即可
 # 实话：免费公开源没有能稳定播全部利物浦比赛的台；CCTV5/5+ 每轮约 2 场英超，BBC 只播足总杯；Sky 是转播，随时可能失效，每周五复查
+# 美国台：USA Network 与 NBC 本周实测不通（服务器空回复），Peacock 是付费流媒体、Universo 公开源里没有，都没法放进来；Telemundo 西语台能播英超，已收录
 
 #EXTINF:-1 tvg-name="CCTV-5" group-title="英超·利物浦",CCTV-5（英超精选·免费）
 http://gmxw.7766.org:808/hls/93/index.m3u8
@@ -13,6 +14,8 @@ https://barinaslive1.boldmss.com/ESPN_2/ESPN_2.isml/ESPN_2.m3u8
 #EXTVLCOPT:http-referrer=https://stmify.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36
 https://cdn.stmify.com/out/v1/SKY_SPORTS_PREMIER_LEAGUE/index.m3u8
+#EXTINF:-1 tvg-name="Telemundo East HD" group-title="英超·美国",Telemundo East HD（美国西语·英超）
+https://streamer1.nexgen.bz/TELEMUNDO/index.m3u8
 #EXTINF:-1 tvg-name="BBC One" group-title="足总杯·需英国IP",BBC One（足总杯·需英国IP）
 https://vs-hls-pushb-uk-live.akamaized.net/x=4/i=urn:bbc:pips:service:bbc_one_yorks/iptv_hd_abr_v1.m3u8
 #EXTINF:-1 tvg-name="BBC Two" group-title="足总杯·需英国IP",BBC Two（足总杯·需英国IP）
@@ -21,3 +24,5 @@ https://vs-hls-push-uk-live.akamaized.net/x=4/i=urn:bbc:pips:service:bbc_two_hd/
 https://tvsen6.aynaott.com/beinsports/index.m3u8
 #EXTINF:-1 tvg-name="beIN SPORTS XTRA" group-title="其他足球",beIN SPORTS XTRA（免费）
 https://bein-xtra-bein.amagi.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="NBC Sports NOW" group-title="其他足球",NBC Sports NOW（免费资讯台·不播完整比赛）
+https://d4whmvwm0rdvi.cloudfront.net/10007/99993008/hls/master.m3u8?ads.xumo_channelId=99993008
