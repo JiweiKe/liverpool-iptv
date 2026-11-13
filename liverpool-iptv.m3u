@@ -1,8 +1,9 @@
 #EXTM3U
-# 利物浦·英超直播源 — 每周五更新（2026-11-08 更新）
+# 利物浦·英超直播源 — 每周五更新（2026-11-13 更新）
 # 播放器里填这个文件的远程地址，每周五更新后点一下刷新即可
 # 实话：免费公开源没有能稳定播全部利物浦比赛的台；BBC 只播足总杯；Sky 是转播，随时可能失效，每周五复查
-# 2026-11-08 注：Sky 源本身还活着（带 Referer 测 200、1080p），但 ntplayer 不认 #EXTVLCOPT、不发 Referer，会被 403 挡掉播不了；想看 Sky 请用 VLC 打开本清单。用户不看央视，CCTV-5/5+ 已从清单去掉
+# 2026-11-13 注：本周 9 台全部复测通过（BBC One/Two 的 403 是需英国 IP 的预期状态）；TNT Sports 1–4 仍 404 未收录；Sky Sports News 本周超时、且是新闻台不播球，未收录；watchfootballhd 的所谓免费 Sky/TNT 清单实测只是 Mux 测试流循环播广告、不是真台，未收录
+# Sky 源本身还活着（带 Referer 测 200、1080p），但 ntplayer 不认 #EXTVLCOPT、不发 Referer，会被 403 挡掉播不了；想看 Sky 请用 VLC 打开本清单。用户不看央视，CCTV-5/5+ 已从清单去掉
 # 美国台：USA Network 本周实测不通（服务器空回复），Peacock 是付费流媒体、Universo 公开源里没有，都没法放进来；用户提供的 NBC 链接实测与 NBC Sports NOW 是同一路信号，留作备用地址
 
 #EXTINF:-1 tvg-name="ESPN 2 拉美" group-title="英超·利物浦",ESPN 2 拉美（拉美有英超版权）
