@@ -1,18 +1,16 @@
 #EXTM3U
-# 利物浦·英超直播源 — 每周五更新（2026-11-13 更新）
+# 利物浦·英超直播源 — 每周五更新（2026-11-20 更新）
 # 播放器里填这个文件的远程地址，每周五更新后点一下刷新即可
-# 实话：免费公开源没有能稳定播全部利物浦比赛的台；BBC 只播足总杯；Sky 是转播，随时可能失效，每周五复查
-# 2026-11-13 注：本周 9 台全部复测通过（BBC One/Two 的 403 是需英国 IP 的预期状态）；TNT Sports 1–4 仍 404 未收录；Sky Sports News 本周超时、且是新闻台不播球，未收录；watchfootballhd 的所谓免费 Sky/TNT 清单实测只是 Mux 测试流循环播广告、不是真台，未收录
-# Sky 源本身还活着（带 Referer 测 200、1080p），但 ntplayer 不认 #EXTVLCOPT、不发 Referer，会被 403 挡掉播不了；想看 Sky 请用 VLC 打开本清单。用户不看央视，CCTV-5/5+ 已从清单去掉
-# 美国台：USA Network 本周实测不通（服务器空回复），Peacock 是付费流媒体、Universo 公开源里没有，都没法放进来；用户提供的 NBC 链接实测与 NBC Sports NOW 是同一路信号，留作备用地址
+# 实话：免费公开源没有能稳定播全部利物浦比赛的台；BBC 只播足总杯；Sky/ESPN 拉美都是转播，随时可能失效，每周五复查
+# 2026-11-20 注：原 Sky Sports Premier League（stmify 英国源）本周实测 404 已失效，换成墨西哥 Sky Sports 1 转播源（实测 200、真实直播流，但未经比赛日验证，不保证播利物浦场次）；ESPN 2 拉美原 barinas 源本周 403，换成同属 ESPN 2 拉美的哥伦比亚源（实测 200）；TNT Sports 1–4 仍 404 未收录；USA Network 仍空回复未收录；watchfootballhd 的所谓免费 Sky/TNT 清单仍是 Mux 测试流循环播广告、不是真台，未收录；Pastebin 上带账号的灰色清单样本实测超时/跳转，未收录（不提供账号密码）
+# BBC One/Two 的 403 是需英国 IP 的预期状态，不是失效。用户不看央视，CCTV-5/5+ 不在清单里
+# 美国台：USA Network 本周实测仍不通（服务器空回复），Peacock 是付费流媒体、Universo 公开源里没有，都没法放进来；NBC Sports NOW 是免费资讯台，不播完整比赛
 
-#EXTINF:-1 tvg-name="ESPN 2 拉美" group-title="英超·利物浦",ESPN 2 拉美（拉美有英超版权）
-https://barinaslive1.boldmss.com/ESPN_2/ESPN_2.isml/ESPN_2.m3u8
-#EXTINF:-1 tvg-name="Sky Sports Premier League" group-title="英超·利物浦",Sky Sports Premier League（转播·需VLC，ntplayer播不了）
-#EXTVLCOPT:http-referrer=https://stmify.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36
-https://cdn.stmify.com/out/v1/SKY_SPORTS_PREMIER_LEAGUE/index.m3u8
-#EXTINF:-1 tvg-name="Telemundo East HD" group-title="英超·美国",Telemundo East HD（美国西语·英超）
+#EXTINF:-1 tvg-name="ESPN 2 拉美" group-title="英超·利物浦",ESPN 2 拉美（拉美有英超版权·转播·哥伦比亚源）
+http://190.61.47.54:8000/play/a005/index.m3u8
+#EXTINF:-1 tvg-name="Sky Sports 1 墨西哥" group-title="英超·利物浦",Sky Sports 1 墨西哥（转播·随时可能失效·未经比赛日验证）
+http://45.228.234.9:8000/play/a06b/index.m3u8
+#EXTINF:-1 tvg-name="Telemundo East HD" group-title="英超·利物浦",Telemundo East HD（美国西语·英超）
 https://streamer1.nexgen.bz/TELEMUNDO/index.m3u8
 #EXTINF:-1 tvg-name="BBC One" group-title="足总杯·需英国IP",BBC One（足总杯·需英国IP）
 https://vs-hls-pushb-uk-live.akamaized.net/x=4/i=urn:bbc:pips:service:bbc_one_yorks/iptv_hd_abr_v1.m3u8
