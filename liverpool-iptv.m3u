@@ -1,13 +1,13 @@
 #EXTM3U
-# 利物浦·英超直播源 — 每周五更新（2026-11-20 更新）
+# 利物浦·英超直播源 — 每周五更新（2026-11-27 更新）
 # 播放器里填这个文件的远程地址，每周五更新后点一下刷新即可
 # 实话：免费公开源没有能稳定播全部利物浦比赛的台；BBC 只播足总杯；Sky/ESPN 拉美都是转播，随时可能失效，每周五复查
-# 2026-11-20 注：原 Sky Sports Premier League（stmify 英国源）本周实测 404 已失效，换成墨西哥 Sky Sports 1 转播源（实测 200、真实直播流，但未经比赛日验证，不保证播利物浦场次）；ESPN 2 拉美原 barinas 源本周 403，换成同属 ESPN 2 拉美的哥伦比亚源（实测 200）；TNT Sports 1–4 仍 404 未收录；USA Network 仍空回复未收录；watchfootballhd 的所谓免费 Sky/TNT 清单仍是 Mux 测试流循环播广告、不是真台，未收录；Pastebin 上带账号的灰色清单样本实测超时/跳转，未收录（不提供账号密码）
+# 2026-11-27 注：ESPN 2 拉美原哥伦比亚源（190.61.47.54）本周实测 403 已失效，换成 iptv-org 体育分类里的同频道新地址（38.211.118.56，实测 200、真实直播流）；beIN Sports USA（tvsen6）本周实测 404 已失效，iptv-org 里同一地址也已失效，暂无替代；新增 beIN SPORTS XTRA 西语版（免费 FAST 台）、ESPN 2 美国、DAZN 3 葡萄牙、TNT Sports 阿根廷（四者均实测 200、真实直播流，但都不播英超，见各台标注）；TNT Sports 1–4 英国仍 404 未收录；USA Network 仍空回复未收录；Sky Sports 2 墨西哥本周 404；watchfootballhd 的所谓免费 Sky/TNT 清单仍是 Mux 测试流循环播广告、不是真台，未收录；Pastebin 上带账号的灰色清单（如 myeasytv）含共享账号密码，未收录（不提供账号密码）
 # BBC One/Two 的 403 是需英国 IP 的预期状态，不是失效。用户不看央视，CCTV-5/5+ 不在清单里
 # 美国台：USA Network 本周实测仍不通（服务器空回复），Peacock 是付费流媒体、Universo 公开源里没有，都没法放进来；NBC Sports NOW 是免费资讯台，不播完整比赛
 
-#EXTINF:-1 tvg-name="ESPN 2 拉美" group-title="英超·利物浦",ESPN 2 拉美（拉美有英超版权·转播·哥伦比亚源）
-http://190.61.47.54:8000/play/a005/index.m3u8
+#EXTINF:-1 tvg-name="ESPN 2 拉美" group-title="英超·利物浦",ESPN 2 拉美（拉美有英超版权·转播·哥伦比亚源·新地址）
+http://38.211.118.56:50002/play/a0fa/index.m3u8
 #EXTINF:-1 tvg-name="Sky Sports 1 墨西哥" group-title="英超·利物浦",Sky Sports 1 墨西哥（转播·随时可能失效·未经比赛日验证）
 http://45.228.234.9:8000/play/a06b/index.m3u8
 #EXTINF:-1 tvg-name="Telemundo East HD" group-title="英超·利物浦",Telemundo East HD（美国西语·英超）
@@ -16,10 +16,16 @@ https://streamer1.nexgen.bz/TELEMUNDO/index.m3u8
 https://vs-hls-pushb-uk-live.akamaized.net/x=4/i=urn:bbc:pips:service:bbc_one_yorks/iptv_hd_abr_v1.m3u8
 #EXTINF:-1 tvg-name="BBC Two" group-title="足总杯·需英国IP",BBC Two（足总杯·需英国IP）
 https://vs-hls-push-uk-live.akamaized.net/x=4/i=urn:bbc:pips:service:bbc_two_hd/iptv_hd_abr_v1.m3u8
-#EXTINF:-1 tvg-name="beIN Sports USA" group-title="其他足球",beIN Sports USA
-https://tvsen6.aynaott.com/beinsports/index.m3u8
 #EXTINF:-1 tvg-name="beIN SPORTS XTRA" group-title="其他足球",beIN SPORTS XTRA（免费）
 https://bein-xtra-bein.amagi.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="beIN SPORTS XTRA en Espanol" group-title="其他足球",beIN SPORTS XTRA 西语版（免费）
+https://dc1644a9jazgj.cloudfront.net/beIN_Sports_Xtra_Espanol.m3u8
+#EXTINF:-1 tvg-name="ESPN 2 美国" group-title="其他足球",ESPN 2 美国（不播英超）
+http://85.237.89.160:9590/usa-s/ESPN-2-HD/index.m3u8
+#EXTINF:-1 tvg-name="DAZN 3 葡萄牙" group-title="其他足球",DAZN 3 葡萄牙（不播英超）
+http://23.237.104.106:8080/DAZN_3/index.m3u8
+#EXTINF:-1 tvg-name="TNT Sports 阿根廷" group-title="其他足球",TNT Sports 阿根廷（阿根廷联赛·不播英超）
+http://45.184.109.10/live/69393EAE6ADBC65A68F942022362A202/86.m3u8
 #EXTINF:-1 tvg-name="NBC Sports NOW" group-title="其他足球",NBC Sports NOW（免费资讯台·不播完整比赛）
 https://d4whmvwm0rdvi.cloudfront.net/10007/99993008/hls/master.m3u8?ads.xumo_channelId=99993008
 #EXTINF:-1 tvg-name="NBC Sports NOW 备用" group-title="其他足球",NBC Sports NOW（备用地址·与上一条同源）
